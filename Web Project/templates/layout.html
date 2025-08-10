@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="icon" type="image/x-icon" href="static\images\favicon.jpg">
+</head>
+<body>
+    <a href="{{ url_for('home') }}"><img class="logo" src="static\images\logo.png" alt="DM Wiki Logo"></a>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    
+    <div class="footerline"></div>
+
+    <footer>
+    <p class="copyright">© Copyright Fibitius Chan 2025</p>
+    <p class="rights">This is <u><strong>NOT</strong></u> an official website. All rights belong to the band <a href="https://www.depechemode.com/" target="_blank" class="dmlink">Depeche Mode.</a></p>
+    <a class="official" href="https://www.depechemode.com/" target="_blank"><img src="static\images\officialweb.png" alt="Official Depeche Mode Website" style="width:100px;height:100px;"></a>
+    <a class="yt" href="https://www.youtube.com/channel/UCM-CWGUijAC-8idv6k6Fygw" target="_blank"><img src="static\images\yt.png" alt="Official Depeche Mode Youtube" style="width:100px;height:100px;"></a>
+    <a class="insta" href="https://www.instagram.com/depechemode/?hl=en" target="_blank"><img src="static\images\instagram.png" alt="Official Depeche Mode Instagram" style="width:100px;height:100px;"></a>
+    <a class="fb" href="https://www.facebook.com/depechemode/" target="_blank"><img src="static\images\facebook.png" alt="Official Depeche Mode Facebook" style="width:100px;height:100px;"></a>
+    <a class="x" href="https://x.com/depechemode?lang=en" target="_blank"><img src="static\images\x.png" alt="Official Depeche Mode X"></a>
+</footer>
+
+</body>
+
+</html>

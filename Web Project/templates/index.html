@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}DM Wiki - Home{% endblock %}
+
+{% block content %}
+<div class="background-triangle"></div>
+<img class="banner" src="static\images\banner.png" alt="DM Wiki Banner">
+<h1>Albums<br>
+    <span style="font-size:0px">
+    <a href="{{ url_for('memento_mori') }}" class="memento_mori"><img src="static\images\memento_mori.png" alt="Memento Mori Album Cover" style="height:125px;width:125px;border:black solid 5px;border-radius:20px;margin-right:10px"></a>
+    <a href="{{ url_for('violator') }}" class="violator"><img src="static\images\violator.png" alt="Violator Album Cover" style="height:125px;width:125px;border:black solid 5px;border-radius:20px;margin-right:10px"></a>
+    <a href="{{ url_for('black_celebration') }}" class="black_celebration"><img src="static\images\black_celebration.png" alt="Black Celebration Album Cover" style="height:125px;width:125px;border:black solid 5px;border-radius:20px;margin-right:10px"></a>
+    <a href="{{ url_for('music_for_the_masses') }}" class="music_for_the_masses"><img src="static\images\music_for_the_masses.png" alt="Music For The Masses Album Cover" style="height:125px;width:125px;border:black solid 5px;order:black solid 5px;border-radius:20px;margin-right:10px"></a>
+    <a href="{{ url_for('some_great_reward') }}" class="some_great_reward"><img src="static\images\some_great_reward.png" alt="Some Great Reward Album Cover" style="height:125px;width:125px;border:black solid 5px;border-radius:20px;margin-right:10px"></a>
+    </span>
+</h1>
+
+<h2 class="trending">Trending</h2>
+<h2>Recent News</h2>
+<h2>About Site</h2>
+
+{% endblock %}
