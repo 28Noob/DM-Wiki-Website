@@ -8,6 +8,8 @@
     <link rel="icon" type="image/x-icon" href="static\images\favicon.jpg">
 </head>
 <body>
+    <div class="background-triangle"></div>
+    <img class="banner" src="static\images\banner.png" alt="DM Wiki Banner">
     <a href="{{ url_for('home') }}"><img class="logo" src="static\images\logo.png" alt="DM Wiki Logo"></a>
     <main>
         {% block content %}{% endblock %}
@@ -22,7 +24,7 @@
     <a class="yt" href="https://www.youtube.com/channel/UCM-CWGUijAC-8idv6k6Fygw" target="_blank"><img src="static\images\yt.png" alt="Official Depeche Mode Youtube" style="width:100px;height:100px;"></a>
     <a class="insta" href="https://www.instagram.com/depechemode/?hl=en" target="_blank"><img src="static\images\instagram.png" alt="Official Depeche Mode Instagram" style="width:100px;height:100px;"></a>
     <a class="fb" href="https://www.facebook.com/depechemode/" target="_blank"><img src="static\images\facebook.png" alt="Official Depeche Mode Facebook" style="width:100px;height:100px;"></a>
-    <a class="x" href="https://x.com/depechemode?lang=en" target="_blank"><img src="static\images\x.png" alt="Official Depeche Mode X"></a>
+    <a class="x" href="https://x.com/depechemode?lang=en" target="_blank"><img src="static\images\x.png" alt="Official Depeche Mode X" style="max-width:200px;max-height:200px;"></a>
 </footer>
 
 </body>
