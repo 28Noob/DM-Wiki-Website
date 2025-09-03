@@ -138,7 +138,7 @@ body {
   position: relative;
   left: 50%;                 
   transform: translateX(-50%);
-  margin-top: 490px;
+  margin-top: 31vh;
   z-index: 2;
 }
 .copyright {
@@ -182,7 +182,7 @@ body {
   top: 0;
   left: 0;
   width: 40vw;
-  height: 1820px;
+  height: 160vh;
   background-color: #4f5150;
   clip-path: polygon(0% 0%, 100% 0%, 15% 100%, 0% 100%);
   z-index: -3;
