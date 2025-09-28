@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}DM Wiki - Home{% endblock %}
+
+{% block content %}
+
+<div class="page-container">
+<h1>Albums<br>
+    <span style="font-size:0px">
+    <a href="{{ url_for('memento_mori') }}" class="memento_mori"><img src="static/images/memento_mori.png" alt="Memento Mori Album Cover" class="albumcover"></a>
+    <a href="{{ url_for('violator') }}" class="violator"><img src="static/images/violator.png" alt="Violator Album Cover" class="albumcover"></a>
+    <a href="{{ url_for('black_celebration') }}" class="black_celebration"><img src="static/images/black_celebration.png" alt="Black Celebration Album Cover" class="albumcover"></a>
+    <a href="{{ url_for('music_for_the_masses') }}" class="music_for_the_masses"><img src="static/images/music_for_the_masses.png" alt="Music For The Masses Album Cover" class="albumcover"></a>
+    <a href="{{ url_for('some_great_reward') }}" class="some_great_reward"><img src="static/images/some_great_reward.png" alt="Some Great Reward Album Cover" class="albumcover"></a>
+    </span>
+</h1>
+<div class="trending">
+    <span class="trendingheader">Trending</span><br>
+    <span class="trendingtext">Released in 1990, Enjoy the Silence is Depeche Mode’s most iconic track, blending dark synth-pop with haunting lyrics. The song became an international hit and remains one of the band’s signature anthems.</span>
+    <a href="https://www.youtube.com/watch?v=aGSKrC7dGcY" target="_blank">
+        <img class="enjoythesilence" 
+             src="https://img.youtube.com/vi/aGSKrC7dGcY/hqdefault.jpg" 
+             alt="Enjoy The Silence - Depeche Mode">
+    </a>
+    <span class="trendingtext">Released in 2023, "Ghosts Again" is Depeche Mode's first single from their album Memento Mori. Co-written with Richard Butler of The Psychedelic Furs, the track blends reflective lyrics with a synth-pop melody, exploring themes of mortality and the afterlife. The song's introspective tone and emotional depth have resonated with audiences worldwide.</span>
+    <a href="https://www.youtube.com/watch?v=iIyrLRixMs8" target="_blank">
+        <img class="ghostsagain" 
+             src="https://img.youtube.com/vi/iIyrLRixMs8/hqdefault.jpg" 
+             alt="Ghosts Again - Depeche Mode">
+      </a>      
+</div>
+<div class="news">
+    <h2 class="newsheader">Recent News<br></h2>
+    <img class="depechemodem"
+        src="static/images/depechemodem.jpg"
+        alt="Depeche Mode M Documentary">
+    <p class="newstext">Depeche Mode is set to release a new documentary film, titled Depeche Mode: M. The film will explore the band’s legacy, feature behind-the-scenes footage, and include exclusive interviews with members and collaborators. Fans can look forward to new insights and never-before-seen material from the iconic group.</span></h2>
+</div>
+<div class="about">
+    <h2 class="aboutheader">About Site</h2>
+    <img class="bandphoto"
+        src="static/images/bandphoto.jpg"
+        alt="David Gahan and Martin Gore">
+        <p class="abouttext1">Welcome to the DM Wiki! This website is an unofficial site with all things Depeche Mode. Here, you'll find their most popular albums, tracks, singles, and more! Explore detailed information about every album, song lyrics, and band members, as well as trending tracks and recent news updates.</p>
+        <p class="abouttext2"> Whether you're a longtime fan or just discovering their music, this site is your go-to resource for everything Depeche Mode.</p>
+</div>
+{% endblock %}
