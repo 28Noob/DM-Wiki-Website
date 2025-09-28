@@ -1,0 +1,1 @@
+Welcome to the Unofficial Depeche Mode Wiki Website! This website contains everything Depeche Mode: their major albums, lyrics of songs, recent news, trending tracks, upcoming events, and more! Enjoy :)
