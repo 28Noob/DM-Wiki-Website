@@ -1,5 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+.banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+  max-height: 30%;
+  border-bottom: 10px solid black;
+  object-fit:cover;
+  object-position:bottom;
+} 
+.logo {
+  border:5px solid black;
+  margin-left: 1%;
+  border-radius: 10px;
+  padding:0.521vw 0.521vw 0.521vw 0.521vw;
+  margin-top: 8vh;
+  height: auto;
+  width: 20%;
+  background-color:#bca988;
+}
+.background-triangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1100px;
+  width: 40vw;
+  background-color: #4f5150;
+  clip-path: polygon(0% 0%, 100% 0%, 15% 100%, 0% 100%);
+  z-index: -3;
+}
 h1 {
   text-align: center;
   text-decoration: underline;
@@ -20,11 +51,11 @@ h1 {
   border-radius:20px;
   margin-right:0.5vw;
   font-size: 0;
-  transition: transform 0.3s ease;
 }
-.albumcover:hover {
+img:hover {
+  transition: transform 0.3s ease;
   transform: scale(1.05);
-}  
+}
 .about {
   border: 5px solid black;
   width: 57.5%;
@@ -66,6 +97,7 @@ h1 {
   margin: 15px auto;
   background-color:#bca988;
   border-radius:10px;
+  min-height: 31vh;
 }
 .newsheader {
   margin: 0;
@@ -73,22 +105,24 @@ h1 {
   font-size: 2.6vw;
   text-decoration: underline;
 }
+.newstext {
+  padding-left: 5.2vw;
+  font-size: 1.3vw;
+  max-width: 136vw;
+}
 .depechemodem {
   border: 3px solid white;
   border-radius:10px;
   float: left;
-  max-width: 12vh;
-  max-height: 21vh;
-  margin-left: 1vw;
+  max-width: auto;
+  max-height: 20vh;
+  margin-top: 1vh;
+  margin-left: 0.5vw;
   margin-right: 0.5vw;
 }
-.newstext {
-  padding-left: 5.208vw;
-  font-size: 1.3vw;
-  max-width: 135.417vw;
-}
+
 .page-container {
-  position:relative;
+  position: relative;
   min-height: 100vh;
 }
 .trending {
@@ -100,59 +134,63 @@ h1 {
   text-align: center;
   background-color:#bca988;
   border-radius:10px;
+  height: 735px;
 }
 .trendingheader {
-  font-size:2.083vw;
+  font-size: 2vw;
   text-decoration: underline;
   font-weight: bold;
 }
 .trendingtext {
-  font-size:1.042vw;
+  font-size: 0.8vw;
   margin-left: 0.26vw;
   margin-right: 0.26vw;
 }
 .enjoythesilence {
   border-radius:10px;
   display: block;
-  max-width: 13.021vw;
+  max-width: 12vw;
   height: auto;
   margin: auto;
-  margin-bottom: 4.63vh;
 }
 .ghostsagain {
   border-radius:10px;
   display: block;
-  max-width: 13.021vw;
+  max-width: 12vw;
   height: auto;
   margin: auto;
   margin-bottom: 1.389vh;
 }
 body {
-  background-color: rgb(140, 140, 140);  
+  margin: 0;
+  background-color: rgb(140, 140, 140);
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+main {
+  padding-bottom: 0;
 }
 .footer {
+  position: absolute;
   z-index:2;
-}
-.footerline {
-  height: 0.926vh;
-  width: 100vw;
-  background-color: black;
-  position: relative;
-  left: 50%;                 
-  transform: translateX(-50%);
-  margin-top: 27vh;
-  z-index: 2;
+  background-color: rgb(60, 60, 60);
+  width: 100%;
+  padding: 0px 20px 0px 20px;
+  min-height: 150px;
+  margin-top: 1vh;
 }
 .copyright {
-  font-size: 1.823vw;
+  font-size: 1.5vw;
   text-align: center;
-  margin-left: 26.042vw;
+  margin-right: 36.5vw;
   margin-top: 4.63vh;
 }
 .rights {
   text-align: right;
+  margin-right: 2vw;
+  font-size: 1vw;
+  padding: 0;
 }
 .dmlink {
   color: blueviolet;
@@ -160,40 +198,14 @@ body {
 .dmlink:hover {
   color: purple;
 }
-.banner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -2;
-  width: 100%;
-  max-height: 30%;
-  border-bottom: 10px solid black;
-  object-fit:cover;
-  object-position:bottom;
-} 
-.logo {
-  border:5px solid black;
-  border-radius:10px;
-  padding:0.521vw 0.521vw 0.521vw 0.521vw;
-  margin-left: 1%;
-  margin-top: 8vh;
-  height: auto;
-  width: 20%;
-  background-color:#bca988;
-}
-.background-triangle {
-  position: absolute;
-  top: 0;
-  height: 168vh;
-  left: 0;
-  width: 40vw;
-  background-color: #4f5150;
-  clip-path: polygon(0% 0%, 100% 0%, 15% 100%, 0% 100%);
-  z-index: -3;
-}
 .footer-icons img {
-  height: 7vh;
-  padding-left: 1vw;
-  margin-bottom: 1vh;
-  transform: translateY(-18vh)
+  height: 8vh;
+  width: auto;
+  padding: 0;
+  display: block;
+}
+.footer-icons a {
+  display: inline-block;
+  margin-left: 1vw;
+  vertical-align: middle;
 }
