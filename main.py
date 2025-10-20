@@ -2,6 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def home():
     header_py = "home"
@@ -37,6 +38,23 @@ def some_great_reward():
     header_py = "some_great_reward"
     return render_template("some_great_reward.html", header=header_py)
 
+
+@app.route("/about_band")
+def about_band():
+    header_py = "about_band"
+    return render_template("about_band.html", active_page='about_band')
+
+
+@app.route("/history")
+def history():
+    header_py = "history"
+    return render_template("history.html", active_page='history')
+
+
+@app.route("/music_videos")
+def music_videos():
+    header_py = "music_videos"
+    return render_template("music_videos.html", active_page='music_videos')
 
 if __name__ == "__main__":
     app.run(debug=True)

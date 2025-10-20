@@ -6,6 +6,7 @@
   left: 0;
   z-index: -2;
   width: 100%;
+  height: auto;
   max-height: 30%;
   border-bottom: 10px solid black;
   object-fit:cover;
@@ -21,14 +22,51 @@
   width: 20%;
   background-color:#bca988;
 }
+.sidebar {
+  position: absolute;
+  background-color: #bca988;
+  border: 5px solid black;
+  border-radius: 10px;
+  width: 12vw;
+  top: 38.2vh;
+  left: 2vw;
+  z-index: 10;
+  overflow: hidden;
+}
+.sidebar .navlinks ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+.sidebar .navlinks li {
+  margin-bottom: 1vh;
+  font-size: 1.4vw;
+}
+.sidebar .navlinks a {
+  display: block;
+  padding: 1.2vh 2vh;
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.sidebar .navlinks a:hover {
+  background-color: #d7c8a5;
+  transform: scale(1.05);
+}
+.sidebar .navlinks a.active {
+  background-color: #e6d9b3;
+}
+.sidebar .navlinks a:active {
+  background-color: #9b8b65;
+}
 .background-triangle {
   position: absolute;
   top: 0;
   left: 0;
-  height: 1100px;
+  height: 168vh;
   width: 40vw;
   background-color: #4f5150;
-  clip-path: polygon(0% 0%, 100% 0%, 15% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 15% 200%, 0% 100%);
   z-index: -3;
 }
 h1 {
@@ -41,7 +79,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   background-color:#bca988;
-  border-radius:10px;
+  border-radius: 10px;
 }
 .albumcover {
   height:auto;
@@ -55,6 +93,7 @@ h1 {
 img:hover {
   transition: transform 0.3s ease;
   transform: scale(1.05);
+  opacity: 0.85;
 }
 .about {
   border: 5px solid black;
@@ -134,7 +173,7 @@ img:hover {
   text-align: center;
   background-color:#bca988;
   border-radius:10px;
-  height: 735px;
+  height: 100%;
 }
 .trendingheader {
   font-size: 2vw;
@@ -183,7 +222,7 @@ main {
 .copyright {
   font-size: 1.5vw;
   text-align: center;
-  margin-right: 36.5vw;
+  margin-right: 70vw;
   margin-top: 4.63vh;
 }
 .rights {

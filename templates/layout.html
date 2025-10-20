@@ -8,9 +8,19 @@
     <link rel="icon" type="image/x-icon" href="static/images/favicon.jpg">
 </head>
 <body>
+
     <div class="background-triangle"></div>
     <img class="banner" src="static/images/banner.png" alt="DM Wiki Banner">
     <a href="{{ url_for('home') }}"><img class="logo" src="static/images/logo.png" alt="DM Wiki Logo"></a>
+    <nav class="sidebar">
+        <div class="navlinks">
+            <ul>
+                <li><a href="{{ url_for('about_band') }}" class="{%if active_page=='about_band' %}active{% endif %}">About Band</a></li>
+                <li><a href="{{ url_for('history') }}" class="{%if active_page=='history' %}active{% endif %}">Band History</a></li>
+                <li><a href="{{ url_for('music_videos') }}" class="{%if active_page=='music_videos' %}active{% endif %}">Music Videos</a></li>
+            </ul>
+        </div>
+    </nav>
     <main>
         {% block content %}{% endblock %}
     </main>
