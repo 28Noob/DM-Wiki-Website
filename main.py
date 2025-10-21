@@ -1,10 +1,10 @@
-from flask import Flask, render_template
+from flask import Flask, render_template #import flask module
 
-app = Flask(__name__)
+app = Flask(__name__) #initialise flask app
 
 
-@app.route("/")
-def home():
+@app.route("/") # set url for the page
+def home(): # define function
     header_py = "home"
     return render_template("index.html", header=header_py)
 
@@ -41,7 +41,7 @@ def some_great_reward():
 
 @app.route("/about_band")
 def about_band():
-    return render_template("about_band.html", active_page='about_band')
+    return render_template("about_band.html", active_page='about_band') # set variable for active page so that the background colour can be highlighted
 
 
 @app.route("/history")

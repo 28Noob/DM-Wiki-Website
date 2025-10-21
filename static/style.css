@@ -429,3 +429,41 @@ main {
   font-weight: bold;
   text-decoration: underline;
 }
+.music-videos {
+  width: 57.5%;
+  background-color: #bca988;
+  border: 5px solid black;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7.5%;
+  padding-bottom: 3vh;
+}
+.mv-header {
+  font-size: 2vw;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.enjoy-the-silence-mv {
+  width: 57.5%;
+  background-color: #bca988;
+  border: 5px solid black;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.1vh;
+  padding-bottom: 3vh;
+}
+.everything-counts-mv {
+  width: 57.5%;
+  background-color: #bca988;
+  border: 5px solid black;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.1vh;
+  padding-bottom: 3vh;
+}
