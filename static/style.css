@@ -58,6 +58,7 @@
 }
 .sidebar .navlinks a:active {
   background-color: #9b8b65;
+  transition: background-color 0s;
 }
 .background-triangle {
   position: absolute;
@@ -66,7 +67,7 @@
   height: 168vh;
   width: 40vw;
   background-color: #4f5150;
-  clip-path: polygon(0% 0%, 100% 0%, 15% 200%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 0% 100%, 0% 100%);
   z-index: -3;
 }
 h1 {
@@ -81,7 +82,7 @@ h1 {
   background-color:#bca988;
   border-radius: 10px;
 }
-.albumcover {
+.index-album-covers {
   height:auto;
   width:auto;
   max-width: 15%;
@@ -159,7 +160,6 @@ img:hover {
   margin-left: 0.5vw;
   margin-right: 0.5vw;
 }
-
 .page-container {
   position: relative;
   min-height: 100vh;
@@ -205,10 +205,9 @@ body {
   background-color: rgb(140, 140, 140);
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
-  font-family: 'Poppins', sans-serif;
 }
 main {
-  padding-bottom: 0;
+  padding-bottom: 50px;
 }
 .footer {
   position: absolute;
@@ -247,4 +246,186 @@ main {
   display: inline-block;
   margin-left: 1vw;
   vertical-align: middle;
+}
+.dm-birth {
+  width: 57.5%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #bca988;
+  border: 5px solid black;
+  border-radius: 10px;
+  margin-top: 7.5%
+}
+.birth-header {
+  text-decoration: underline;
+  font-size: 2vw;
+  font-weight: bold;
+}
+.birth-text {
+  font-size: 0.9vw;
+}
+.dm-journey {
+  width: 57.5%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #bca988;
+  border: 5px solid black;
+  border-radius: 10px;
+  margin-top: 0.8%;
+}
+.journey-header {
+  text-decoration: underline;
+  font-size: 2vw;
+  font-weight: bold;
+}
+.journey-text {
+  font-size: 0.9vw;
+}
+.dm-present {
+  width: 57.5%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #bca988;
+  border: 5px solid black;
+  border-radius: 10px;
+  margin-top: 0.8%;
+}
+.present-header {
+  text-decoration: underline;
+  font-size: 2vw;
+  font-weight: bold;
+}
+.present-text {
+  font-size: 0.9vw;
+}
+.band-summary {
+  width: 57.5%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #bca988;
+  border: 5px solid black;
+  border-radius: 10px;
+  margin-top: 7.5%;
+}
+.summary-header {
+  text-decoration: underline;
+  font-size: 2vw;
+  font-weight: bold;
+}
+.members {
+  width: 57.5%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #bca988;
+  border: 5px solid black;
+  border-radius: 10px;
+  margin-top: 1.1vh;
+}
+.members-header {
+  text-decoration: underline;
+  font-size: 2vw;
+  font-weight: bold;
+}
+.members-text {
+  font-size: 1vw;
+}
+.member-cards {
+  text-align: center;
+  margin: 3vh auto;
+  min-width: 57.5%;
+  max-width: 61%;
+}
+.member-cards > div {
+  vertical-align: top;
+   background-color: #bca988;
+   display: inline-block;
+   width: 17%;
+   margin: 0 1%;
+   margin-top: 1%;
+   border: 5px solid black;
+   border-radius: 10px;
+   padding: 1vh;
+   box-sizing: border-box;
+   text-align: center;
+   transition: transform 0.2s ease, background-color 0.2s ease;
+   height: 46vh;
+}
+.member-cards > div:hover {
+  background-color: #d7c8a5;
+  transform: scale(1.05);
+}
+.member-cards img {
+  border-radius: 10px;
+  height: 25%;
+  width: auto;
+  border: 3px solid black;
+}
+.member-cards span {
+  display: block;
+  font-size: 0.8vw;
+  margin-top: 0.5vh;
+}
+.member-cards span:first-child {
+  font-weight: bold;
+  font-size: 1.2vw;
+  text-decoration: underline;
+}
+.album-overview {
+  width: 57.5%;
+  background-color: #bca988;
+  border: 5px solid black;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7.5%;
+  padding-bottom: 3vh;
+}
+.album-covers {
+  float: left;
+  max-width: 30%;
+  height: auto;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-top: 7vh;
+  margin-left: 0.9vw;
+}
+.album-header {
+  font-size: 2vw;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.album-songs {
+  width: 57.5%;
+  background-color: #bca988;
+  border: 5px solid black;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 1.1vh;
+}
+.album-songs ul {
+  list-style: none;
+  padding-left: 0;
+}
+.album-songs li {
+  margin-bottom: 0.8vh;
+  font-size: 1.2vw;
+}
+.album-songs a {
+  color: blueviolet;
+}
+.album-songs a:hover {
+  color: purple;
+}
+.songs-header {
+  font-size: 2vw;
+  font-weight: bold;
+  text-decoration: underline;
 }
