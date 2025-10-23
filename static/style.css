@@ -28,7 +28,9 @@
 }
 #navbar-toggle {
   position: absolute;
-  top: 38.2vh;
+  width: 4vw;
+  height: 4vw;
+  top: 38.7vh;
   left: 2vw;
   z-index: 20;
   padding: 0.5vw 1vw;
@@ -39,6 +41,10 @@
   border-radius: 10px;
   transition: transform 0.5s ease, background-color 0.3s ease;
   transform-origin: center center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
 #navbar-toggle.active {
   background-color: #9b8b65;
