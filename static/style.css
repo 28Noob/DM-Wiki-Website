@@ -259,17 +259,31 @@ main {
   min-height: 150px;
   margin-top: 1vh;
 }
+.footer-icons img {
+  height: 8vh;
+  width: auto;
+  padding: 0;
+  display: block;
+  padding-top: 5vh;
+}
+.footer-icons a {
+  display: inline-block;
+  margin-left: 1vw;
+  vertical-align: middle;
+}
 .copyright {
+  color: #8c8c8c;
   font-size: 1.5vw;
   text-align: center;
-  margin-right: 70vw;
-  margin-top: 4.63vh;
+  margin-right: 74vw;
 }
 .rights {
-  text-align: right;
-  margin-right: 2vw;
+  color: #8c8c8c;
+  position: absolute;
+  right: 3.5vw;
+  vertical-align: middle;
   font-size: 1vw;
-  padding: 0;
+  bottom: 10px;
 }
 .dmlink {
   color: blueviolet;
@@ -277,17 +291,7 @@ main {
 .dmlink:hover {
   color: purple;
 }
-.footer-icons img {
-  height: 8vh;
-  width: auto;
-  padding: 0;
-  display: block;
-}
-.footer-icons a {
-  display: inline-block;
-  margin-left: 1vw;
-  vertical-align: middle;
-}
+
 .dm-birth {
   box-shadow: 20px 20px 20px rgba(0,0,0,0.25);
   width: 57.5%;
