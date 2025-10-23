@@ -10,13 +10,14 @@
     <link rel="icon" type="image/x-icon" href="static/images/favicon.jpg">
 </head>
 <body>
-
     <div class="background-triangle"></div>
     <img class="banner" src="static/images/banner.png" alt="DM Wiki Banner">
     <!--logo that appears on every page. will take the user to the home page when clicked-->
     <a href="{{ url_for('home') }}"><img class="logo" src="static/images/logo.png" alt="DM Wiki Logo"></a>
+    <!--set button for navbar adjustability-->
+    <button id="navbar-toggle">☰</button>
     <!--side navigation bar. highlights the user's active page by using "active" class-->
-    <nav class="sidebar">
+    <nav class="navbar">
         <div class="navlinks">
             <ul>
                 <li><a href="{{ url_for('about_band') }}" class="{%if active_page=='about_band' %}active{% endif %}">About Band</a></li>
@@ -44,5 +45,14 @@
         
         <p class="copyright">© Copyright Fibitius Chan 2025</p>
     </footer>
+<!--use JavaScript to make navbar expandable and collapsible by making the button functional-->
+<script>
+    const toggleBtn = document.getElementById('navbar-toggle');
+    const navbar = document.querySelector('.navbar');
+
+    toggleBtn.addEventListener('click', () => {
+        navbar.classList.toggle('collapsed');
+    });
+</script>
 </body>
 </html>
