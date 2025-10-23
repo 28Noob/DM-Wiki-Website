@@ -1,6 +1,8 @@
 /* import 'Poppins' font for consistent text aesthetics throughout the interface */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+::-webkit-scrollbar {
+  display: none;
+}
 .banner {
   box-shadow: 20px 20px 20px rgba(0,0,0,0.25);
   position: absolute;
@@ -118,8 +120,10 @@ h1 {
   margin-right:0.5vw;
   font-size: 0;
 }
+img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
 img:hover {
-  box-shadow: 20px 20px 20px rgba(0,0,0,0.25);
   transition: transform 0.3s ease;
   transform: scale(1.05);
   opacity: 0.85;
@@ -402,6 +406,7 @@ main {
   transform: scale(1.05);
 }
 .member-cards img {
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.25);
   border-radius: 10px;
   height: 25%;
   width: auto;
@@ -454,6 +459,9 @@ main {
   margin-right: auto;
   text-align: center;
   margin-top: 1.1vh;
+}
+.song-names {
+  font-size: 1.7vw;
 }
 .album-songs ul {
   list-style: none;
