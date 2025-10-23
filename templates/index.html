@@ -1,11 +1,13 @@
+<!--extends the layout file for page consistency-->
 {% extends "layout.html" %}
-
+<!--set page title-->
 {% block title %}DM Wiki - Home{% endblock %}
-
+<!--main content block for home page-->
 {% block content %}
 
 <div class="page-container">
 <h1>Albums<br>
+    <!--album covers that you can click to their respective pages-->
     <span style="font-size:0px">
     <a href="{{ url_for('memento_mori') }}">
         <img src="static/images/memento_mori.png" alt="Memento Mori Album Cover" class="index-album-covers"></a>
