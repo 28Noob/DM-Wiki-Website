@@ -15,7 +15,7 @@
     <!--logo that appears on every page. will take the user to the home page when clicked-->
     <a href="{{ url_for('home') }}"><img class="logo" src="static/images/logo.png" alt="DM Wiki Logo"></a>
     <!--set button for navbar adjustability-->
-    <button id="navbar-toggle">☰</button>
+    <button id="navbar-toggle">✖</button>
     <!--side navigation bar. highlights the user's active page by using "active" class-->
     <nav class="navbar">
         <div class="navlinks">
@@ -52,6 +52,13 @@
 
     toggleBtn.addEventListener('click', () => {
         navbar.classList.toggle('collapsed');
+        toggleBtn.classList.toggle('active');
+
+        if (toggleBtn.classList.contains('active')) {
+                toggleBtn.textContent = '☰';
+            } else {
+                toggleBtn.textContent = '✖';
+        }
     });
 </script>
 </body>
