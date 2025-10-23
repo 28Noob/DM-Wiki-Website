@@ -47,16 +47,22 @@
     </footer>
 <!--use JavaScript to make navbar expandable and collapsible by making the button functional-->
 <script>
+    // get navbar and its toggle button
     const toggleBtn = document.getElementById('navbar-toggle');
     const navbar = document.querySelector('.navbar');
 
+    // add a click event listener for the navbar toggle button
     toggleBtn.addEventListener('click', () => {
+        // toggle the navbar in its collapsed state
         navbar.classList.toggle('collapsed');
+        // toggle the navbar in its expanded state
         toggleBtn.classList.toggle('active');
-
+       
         if (toggleBtn.classList.contains('active')) {
+                // if active, show the triple line menu
                 toggleBtn.textContent = '☰';
             } else {
+                // if not, show the '✖' as the close navbar button
                 toggleBtn.textContent = '✖';
         }
     });
